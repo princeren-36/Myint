@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val arrayAdapter: ArrayAdapter<String>
-        val listHero = arrayOf("Spiderman", "Batman", "Superman", "Lastikman")
+        val listHero = arrayOf("Spiderman", "Batman", "Superman", "Lastikman", "Ultraman", "Ken", "Saitama", "Naruto", "Luffy", "Goku")
         listView = findViewById(R.id.lvHero)
         arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1,listHero)
         listView.adapter = arrayAdapter

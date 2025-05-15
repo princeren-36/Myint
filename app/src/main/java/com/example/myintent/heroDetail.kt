@@ -25,9 +25,16 @@ class heroDetail : AppCompatActivity() {
             "Spiderman" -> R.drawable.spiderman
             "Batman" -> R.drawable.batman
             "Superman" -> R.drawable.superman
-            else -> R.drawable.lastikman
+            "Lastikman" -> R.drawable.lastikman
+            "Goku" -> R.drawable.goku
+            "Luffy" -> R.drawable.luffy
+            "Saitama" -> R.drawable.saitama
+            "Ken" -> R.drawable.ken
+            "Naruto" -> R.drawable.naruto
+            else -> R.drawable.ultraman
         }
 
         imgHero.setImageResource(heroDetail)
+
     }
 }
