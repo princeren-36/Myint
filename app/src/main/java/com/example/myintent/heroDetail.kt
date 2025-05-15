@@ -36,5 +36,19 @@ class heroDetail : AppCompatActivity() {
 
         imgHero.setImageResource(heroDetail)
 
+        val heroDescription = when (heroName) {
+            "Spiderman" -> "Spiderman is a superhero appearing in American comic books published by Marvel Comics."
+            "Batman" -> "Batman is a superhero appearing in American comic books published by DC Comics."
+            "Superman" -> "Superman is a superhero appearing in American comic books published by DC Comics."
+            "Lastikman" -> "Lastikman is a superhero appearing in Indonesian comic books."
+            "Goku" -> "Goku is a character from the Dragon Ball manga and anime series created by Akira Toriyama."
+            "Luffy" -> "Luffy is the main character of the One Piece manga and anime series created by Eiichiro Oda."
+            "Saitama" -> "Saitama is bald"
+            "Ken" -> "Ken is a character from the series of anime called Tokyo Ghoul."
+            "Naruto" -> "Naruto is a character from the Naruto manga and anime series created by Masashi Kishimoto."
+            else -> "Ultraman is a superhero appearing in Japanese tokusatsu television series."
+        }
+        val txtDescription = findViewById<TextView>(R.id.txtDescription)
+        txtDescription.text = heroDescription
     }
 }
